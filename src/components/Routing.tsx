@@ -4,6 +4,7 @@ import { Counter } from "./Counter";
 import { EmployeeForm } from "./EmployeeForm";
 import { EmployeeTable } from "./EmployeeTable";
 import PokeComponent from "./PokeComponent";
+import Rerender from "./Rerender";
 import { UseCallback } from "./UseCallback";
 import { UseContext } from "./UseContext";
 import UseEffect from "./UseEffect";
@@ -77,6 +78,7 @@ export default function Routing() {
       </nav> */}
       <Routes>
         <Route path="/" element={<PokeComponent />} />
+        <Route path="/re-render" element={<Rerender />} />
         {/* <Route path="/employee-form" element={<EmployeeForm />} />
         <Route path="/employee" element={<EmployeeTable />} />
         <Route path="/useeffect" element={<UseEffect />} />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 
 function Rerender() {
   return (
@@ -9,9 +9,9 @@ function Rerender() {
   );
 }
 
-function Header(props: any) {
+const Header = memo(function (props: any) {
   return <div>{props.title}</div>;
-}
+});
 
 function HeaderWithButton(props: any) {
   const [firstTitle, setFirstTitle] = useState("My Name is Satyadeep");
